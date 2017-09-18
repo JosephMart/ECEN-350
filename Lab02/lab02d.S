@@ -5,8 +5,8 @@ lab02d:
 		ADD X1, X0, #1000
 		ADRP X2, myvalue
        	ADD X2,X2, :lo12:myvalue
-       	STUR X2, [X1, 0]
-       	OR X0, XZR, X2
+       	STUR X1, [X2, 0]
+       	ORR X0, XZR, X2
        	BR X30
 .section .data
 myvalue:

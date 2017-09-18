@@ -4,6 +4,7 @@
 # This example is intended to be built with Linaro bare-metal GCC
 
 TARGET=Lab03.axf
+S_FILE=
 
 CC=aarch64-elf-gcc
 LD=aarch64-elf-gcc
@@ -37,7 +38,7 @@ main.o: main.c
 # Compile for best debug view (lowest optimization)
 	$(CC) -c -march=armv8-a -g -O0 $^ -o $@
 
-test.o: test.S
+test.o: lab03b.S
 # Compile for best debug view (lowest optimization)
 	$(CC) -c -march=armv8-a -g -O0 $^ -o $@
 

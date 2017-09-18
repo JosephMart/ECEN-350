@@ -1,6 +1,6 @@
 .globl test
 test:
-	MOVZ X1, #10
+	MOVZ X1, #9
 	ADD X0, XZR, XZR
 
 loop:
@@ -12,3 +12,7 @@ loop:
 finish:
 	ADD X0, X0, 100
 	BR X30
+
+.section .data
+UIN:
+	.byte 33
