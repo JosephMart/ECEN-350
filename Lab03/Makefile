@@ -38,7 +38,7 @@ main.o: main.c
 # Compile for best debug view (lowest optimization)
 	$(CC) -c -march=armv8-a -g -O0 $^ -o $@
 
-test.o: lab03b.S
+test.o: lab03c.S
 # Compile for best debug view (lowest optimization)
 	$(CC) -c -march=armv8-a -g -O0 $^ -o $@
 

@@ -1,18 +1,23 @@
-.globl test
-test:
-	MOVZ X1, #9
-	ADD X0, XZR, XZR
+.section .text
+.globl array
+array:
+	ADRP X0, my_array
+    ADD X0, X0, :lo12:my_array
+    ORR X2, XZR, #3 // j = 3
+    ORR X1, XZR, XZR // i = X1
 
 loop:
-	CBZ X1, finish
-	ADD X0, X0, X1
-	SUB X1, X1, #1
+	SUBS XZR, X1, #10
+	B.EQ finish
+	LSL X9, X1, #2
+	ADD X10, X0, X9
+	STUR X2, [X10, #0] // my_array[i] = j
+	ADD X1, X1, #1 // i++
+	ADD X2, X2, #1 // j++
 	B loop
 
 finish:
-	ADD X0, X0, 100
 	BR X30
 
 .section .data
-UIN:
-	.byte 33
+	my_array: .space 40

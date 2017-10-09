@@ -2,11 +2,10 @@
 
 #include <stdio.h>
 
-extern long long int test(long long int a);
+extern long long int array();
 
 int main(void)
 {
-    long long int a = test(33);
-    printf("Result of test(3) = %ld\n", a);
+    long long int a = array();
     return 0;
 }

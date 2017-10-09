@@ -37,10 +37,14 @@ main.o: main.c
 # Compile for best debug view (lowest optimization)
 	$(CC) -c -march=armv8-a -g -O0 $^ -o $@
 
+lab04b.o: lab04b.S
+# Compile for best debug view (lowest optimization)
+	$(CC) -c -march=armv8-a -g -O0 $^ -o $@
+
 my_mul.o: my_mul.S
 # Compile for best debug view (lowest optimization)
 	$(CC) -c -march=armv8-a -g -O0 $^ -o $@
 
-$(TARGET): main.o my_mul.o
+$(TARGET): main.o my_mul.o lab04b.o
 # Link with specific base address to suit VE model memory layout
-	$(LD) --specs=aem-ve.specs -Wl,--build-id=none main.o my_mul.o -o $@
+	$(LD) --specs=aem-ve.specs -Wl,--build-id=none main.o lab04b.o my_mul.o -o $@

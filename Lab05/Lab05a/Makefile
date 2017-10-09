@@ -40,9 +40,13 @@ main.o: main.c
 test.o: test.s
 # Compile for best debug view (lowest optimization)
 	$(CC) -c -march=armv8-a -g -O0 $^ -o $@
+	
+test2.o: test2.S
+# Compile for best debug view (lowest optimization)
+	$(CC) -c -march=armv8-a -g -O0 $^ -o $@
 
 
-$(TARGET): main.o test.o
+$(TARGET): main.o test2.o test.o
 # Link with specific base address to suit VE model memory layout
-	$(LD) --specs=aem-ve.specs -Wl,--build-id=none main.o test.o -o $@
+	$(LD) --specs=aem-ve.specs -Wl,--build-id=none main.o test2.o test.o -o $@
 
