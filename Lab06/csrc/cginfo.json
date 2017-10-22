@@ -1,0 +1,92 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 88797
+    },
+    "CompileProcesses": [
+        "cgproc.7860.json"
+    ],
+    "CurCompileUdps": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "GatesTest",
+        "GatesTest"
+    ],
+    "CompileStatus": "Successful",
+    "NameTable": {
+        "GatesTest": [
+            "GatesTest",
+            "W6mIe",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.060450999999999998,
+            "ru_nvcsw": 305,
+            "ru_stime_sec": 0.069371000000000002,
+            "ru_nivcsw": 176,
+            "ru_majflt": 10,
+            "ru_maxrss_kb": 51232,
+            "ru_minflt": 12614
+        },
+        "mopSpeed": 38922.155688622748,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0
+        },
+        "ru_self_end": {
+            "ru_utime_sec": 0.073477000000000001,
+            "ru_nvcsw": 389,
+            "ru_stime_sec": 0.082535999999999998,
+            "ru_nivcsw": 186,
+            "ru_majflt": 10,
+            "ru_maxrss_kb": 58944,
+            "ru_minflt": 14819
+        },
+        "nMops": 507,
+        "nQuads": 147,
+        "totalObjSize": 107546,
+        "outputSizePerQuad": 731.0,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0
+        },
+        "quadSpeed": 11285.122063565175,
+        "mop/quad": 3.4489795918367347,
+        "Frontend(%)": 82.272003484083456,
+        "CodeGen(%)": 17.727996515916548
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "Misc": {
+        "cwd": "/home/ugrads/j/josephmart/git/ECEN_350/Lab06",
+        "csrc_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab06/csrc",
+        "csrc": "csrc",
+        "default_output_dir": "csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab06/simv.daidir",
+        "archive_dir": "archive.0"
+    }
+}
