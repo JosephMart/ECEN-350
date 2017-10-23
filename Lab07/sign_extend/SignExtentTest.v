@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 `define STRLEN 15
 
 // B Codes
@@ -24,11 +23,11 @@
 module SignExtenderTest_v;
 
    task passTest;
-      input [1:0] actualOut, expectedOut;
+      input [63:0] actualOut, expectedOut;
       input [`STRLEN*8:0] testType;
       inout [7:0]         passed;
       
-      if(actualOut == expectedOut) begin $display ("%s passed", testType); passed = passed + 1; end
+      if(actualOut == expectedOut) begin $display ("%f passed", expectedOut); passed = passed + 1; end
       else $display ("%s failed: %d should be %d", testType, actualOut, expectedOut);
    endtask
    
@@ -41,7 +40,7 @@ module SignExtenderTest_v;
    endtask
 
    // Inputs
-   reg [32:0]     Imm32;
+   reg [31:0]     Imm32;
    reg [7:0]      passed;
 
    // Outputs
@@ -59,10 +58,19 @@ module SignExtenderTest_v;
       passed = 0;
 
       // Add stimulus here
-      #90; Imm32={`B, 26'b0}; #10; passTest({BusImm}, 64'b0, "B and 0s", passed);
-	  #90;
+			// Testing B types
+      #90; Imm32={`B, 26'b0}; #10; passTest({BusImm}, 64'b0, "Type(B) and 0s", passed);
+      #90; Imm32={`BL, 1'b1, 25'b0}; #10; passTest({BusImm}, {{38{1'b1}}, 26'b0}, "Type(B) and 1s", passed);
+
+			// Testing D types
+      #90; Imm32={`STURB, 21'b0}; #10; passTest({BusImm}, 64'b0, "Type(D) and 0s", passed);
+      #90; Imm32={`LDURD, 1'b1, 20'b0}; #10; passTest({BusImm}, {{43{1'b1}}, 21'b0}, "Type(D) and 1s", passed);
+
+			// Testing CB types
+      #90; Imm32={`BCOND, 24'b0}; #10; passTest({BusImm}, 64'b0, "Type(CB) and 0s", passed);
+      #90; Imm32={`CBNZ, 1'b1, 23'b1}; #10; passTest({BusImm}, {{30{1'b1}}, 24'b0}, "Type(CB) and 1s", passed);
       
-      allPassed(passed, 1);
+      allPassed(passed, 6);
 
    end
    

@@ -9,16 +9,15 @@ synopsys::dump -autoflush on -fid VPD0
 set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpq2uMFI
-synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.josephmart.10784}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.josephmart.10784}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpehv08f
+synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.josephmart.696}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.josephmart.696}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-synopsys::dump -add {SignExtenderTest_v} -scope "." -depth 1 -fid VPD0
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state

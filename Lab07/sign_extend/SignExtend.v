@@ -28,15 +28,16 @@ module SignExtender(BusImm, Imm32);
 	begin
 		if(Imm32[31:26] == `B || Imm32[31:26] == `BL) // Check B
 			BusImm = {{38{Imm32[25]}}, Imm32[25:0]};
-		else if(   (Imm32[31:21] == `STURB) ||
-				 (Imm32[31:21] == `LDURB) || Imm32[31:21] == `STURH 
-						|| Imm32[31:21] == `LDURH 
-						|| Imm32[31:21] == `STURW 
-						|| Imm32[31:21] == `LDURSW 
-						|| Imm32[31:21] == `STXR 
-						|| Imm32[31:21] == `LDXR 
-						|| Imm32[31:21] == `STURD 
-						|| Imm32[31:21] == `LDURD)
+		else if(   (Imm32[31:21] == `STURB) 
+			|| (Imm32[31:21] == `LDURB) 
+			|| Imm32[31:21] == `STURH 
+			|| Imm32[31:21] == `LDURH 
+			|| Imm32[31:21] == `STURW 
+			|| Imm32[31:21] == `LDURSW 
+			|| Imm32[31:21] == `STXR 
+			|| Imm32[31:21] == `LDXR 
+			|| Imm32[31:21] == `STURD 
+			|| Imm32[31:21] == `LDURD)
 			BusImm = {{43{Imm32[20]}}, Imm32[20:0]};
 		else if( Imm32[31:24] == `BCOND || Imm32[31:24] == `CBZ || Imm32[31:24] == `CBNZ) // Check CB
 			BusImm = {{40{Imm32[23]}}, Imm32[23:0]};

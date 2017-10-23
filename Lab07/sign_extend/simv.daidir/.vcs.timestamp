@@ -92,12 +92,12 @@ CDC_JOINED_DOMAIN=engr.tamu.edu
 CDC_JOINED_DC=ops1.engr.tamu.edu
 0
 3
-1508793429 SignExtend.v
-1508793334 SignExtentTest.v
+1508796413 SignExtentTest.v
+1508795971 SignExtend.v
 1464145466 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/vcsdp.tab
 4
 0 
 1464147802 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libvirsim.so
 1464147272 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/liberrorinf.so
 1464147248 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libsnpsmalloc.so
-1508793431 simv.daidir
+1508796419 simv.daidir
