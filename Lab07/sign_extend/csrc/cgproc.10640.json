@@ -1,0 +1,39 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "SignExtenderTest_v": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7213,
+            "checksum": 0
+        },
+        "uBsjF_d": {
+            "mod": "SignExtenderTest_v",
+            "out": "uBsjF_d.o",
+            "mode": 4,
+            "bytes": 16838,
+            "checksum": 0,
+            "archive": "archive.0/_10640_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_10640_archive_1.a",
+            "objects": [
+                [
+                    "uBsjF_d.o",
+                    16838
+                ]
+            ],
+            "size": 16838
+        }
+    ]
+}
