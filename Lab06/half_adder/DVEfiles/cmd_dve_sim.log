@@ -9,21 +9,15 @@ synopsys::dump -autoflush on -fid VPD0
 set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpWO1iNG
-synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.josephmart.9496}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.josephmart.9496}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpmvGZze
+synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.josephmart.21934}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.josephmart.21934}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-synopsys::dump -add {HalfAddTest_v} -scope "." -depth 1 -fid VPD0
-synopsys::run
-set ucliGUI::state
-set ucliGUI::state
-set ucliGUI::state
-set ucliGUI::state
 if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
 synopsys::finish
 set ucliGUI::state
