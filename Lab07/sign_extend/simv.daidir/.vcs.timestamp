@@ -29,22 +29,12 @@
 -ucli
 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/bin/vcs1
 SignExtend.v
-SignExtentTest.v
-59
+SignExtendTest.v
+40
 sysc_uni_pwd=/home/ugrads/j/josephmart/git/ECEN_350/Lab07/sign_extend
-XMODIFIERS=@im=none
-XDG_VTNR=1
-XDG_SESSION_TYPE=x11
-XDG_SESSION_ID=115
-XDG_SESSION_DESKTOP=gnome-classic
-XDG_SEAT=seat0
+XDG_SESSION_ID=15784
 XDG_RUNTIME_DIR=/run/user/323009961
-XDG_MENU_PREFIX=gnome-
 XDG_DATA_DIRS=/home/ugrads/j/josephmart/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
-XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
-XAUTHORITY=/run/gdm/auth-for-josephmart-qdMBSA/database
-WINDOWPATH=1:1:1:1:2:1
-VTE_VERSION=4602
 VMR_MODE_FLAG=64
 VCS_MX_HOME_INTERNAL=1
 VCS_MODE_FLAG=64
@@ -54,50 +44,41 @@ VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH_OVERRIDE=linux
 VCS_ARCH=linux64
 USER_PRINCIPAL_NAME=josephmart@AUTH.TAMU.EDU
-USERNAME=josephmart
 UNAME=/bin/uname
 TOOL_HOME=/softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64
-SSH_AUTH_SOCK=/run/user/323009961/keyring/ssh
-SSH_AGENT_PID=28495
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/28332,unix/unix:/tmp/.ICE-unix/28332
+SSH_TTY=/dev/pts/26
+SSH_CONNECTION=165.91.49.62 36986 165.91.159.17 22
+SSH_CLIENT=165.91.49.62 36986 22
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
 SCRNAME=vcs
 SCRIPT_NAME=vcs
-QT_QPA_PLATFORMTHEME=qgnomeplatform
-QT_IM_MODULE=xim
-QT_GRAPHICSSYSTEM_CHECKED=1
-QTLIB=/usr/lib64/qt-3.3/lib
-QTINC=/usr/lib64/qt-3.3/include
-QTDIR=/usr/lib64/qt-3.3
 OVA_UUM=0
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LOADEDMODULES=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
-KRB5CCNAME=FILE:/tmp/krb5cc_323009961
-IMSETTINGS_MODULE=none
-IMSETTINGS_INTEGRATE_DESKTOP=yes
+KRB5CCNAME=FILE:/tmp/krb5cc_cdc323009961_U5PmPS
+HISTFILESIZE=10000
 HISTCONTROL=ignoredups
-GNOME_SHELL_SESSION_MODE=classic
-GNOME_DESKTOP_SESSION_ID=this-is-deprecated
-GDM_LANG=en_US.UTF-8
-GDMSESSION=gnome-classic
-DESKTOP_SESSION=gnome-classic
-DESKTOP_AUTOSTART_ID=106d65822c2aa113ed150878773177711600000283320001
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Hg7LWC7871,guid=9324eb6f1169a85f98e57eca59ee4612
-DA_SESSION_ID_AUTH=4c9ee525-d0d0-2f47-9699-3edd3f223a87
-COLORTERM=truecolor
-CDC_PREW2KHOST=lin06-424cvlb
-CDC_LOCALHOST=lin06-424cvlb.ece.tamu.edu
-CDC_JOINED_ZONE=CN=Labs,CN=Override,CN=ECEN,CN=Depts,CN=Global,CN=Zones,OU=Centrify,OU=Services,DC=engr,DC=tamu,DC=edu
+DA_SESSION_ID_AUTH=a1ff3677-cafc-d54c-a2d4-0f945465c09b
+CDC_PREW2KHOST=apollo3
+CDC_LOCALHOST=apollo3.engr.tamu.edu
+CDC_JOINED_ZONE=CN=Servers,CN=Override,CN=ECEN,CN=Depts,CN=Global,CN=Zones,OU=Centrify,OU=Services,DC=engr,DC=tamu,DC=edu
 CDC_JOINED_SITE=Default-First-Site-Name
 CDC_JOINED_DOMAIN=engr.tamu.edu
-CDC_JOINED_DC=ops1.engr.tamu.edu
+CDC_JOINED_DC=ops4.engr.tamu.edu
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 0
 3
-1508796413 SignExtentTest.v
-1508795971 SignExtend.v
+1508796925 SignExtend.v
+1508872701 SignExtendTest.v
 1464145466 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/vcsdp.tab
 4
 0 
 1464147802 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libvirsim.so
 1464147272 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/liberrorinf.so
 1464147248 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libsnpsmalloc.so
-1508796419 simv.daidir
+1508872709 simv.daidir
