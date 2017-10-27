@@ -38,9 +38,9 @@ module SignExtender(BusImm, Imm32);
 			|| Imm32[31:21] == `LDXR 
 			|| Imm32[31:21] == `STURD 
 			|| Imm32[31:21] == `LDURD)
-			BusImm = {{43{Imm32[20]}}, Imm32[20:0]};
+			BusImm = {{55{Imm32[20]}}, Imm32[20:12]};
 		else if( Imm32[31:24] == `BCOND || Imm32[31:24] == `CBZ || Imm32[31:24] == `CBNZ) // Check CB
-			BusImm = {{40{Imm32[23]}}, Imm32[23:0]};
+			BusImm = {{45{Imm32[23]}}, Imm32[23:5]};
 		else
 			BusImm = 64'b0;
 	end

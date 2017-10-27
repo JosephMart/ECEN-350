@@ -1,0 +1,19 @@
+{
+    "Modules": {
+        "SignExtender_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 16
+        },
+        "...MASTER...": {}
+    },
+    "CompUnits": {},
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "bbtrW_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": []
+}

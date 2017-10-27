@@ -29,10 +29,10 @@
 -ucli
 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/bin/vcs1
 SignExtend.v
-SignExtendTest.v
+SignExtenderTestTA.v
 40
 sysc_uni_pwd=/home/ugrads/j/josephmart/git/ECEN_350/Lab07/sign_extend
-XDG_SESSION_ID=15784
+XDG_SESSION_ID=c492
 XDG_RUNTIME_DIR=/run/user/323009961
 XDG_DATA_DIRS=/home/ugrads/j/josephmart/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
 VMR_MODE_FLAG=64
@@ -46,9 +46,9 @@ VCS_ARCH=linux64
 USER_PRINCIPAL_NAME=josephmart@AUTH.TAMU.EDU
 UNAME=/bin/uname
 TOOL_HOME=/softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64
-SSH_TTY=/dev/pts/26
-SSH_CONNECTION=165.91.49.62 36986 165.91.159.17 22
-SSH_CLIENT=165.91.49.62 36986 22
+SSH_TTY=/dev/pts/24
+SSH_CONNECTION=165.91.49.31 56170 165.91.159.17 22
+SSH_CLIENT=165.91.49.31 56170 22
 SELINUX_USE_CURRENT_RANGE=
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
@@ -60,25 +60,25 @@ MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
 LOADEDMODULES=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
-KRB5CCNAME=FILE:/tmp/krb5cc_cdc323009961_U5PmPS
+KRB5CCNAME=FILE:/tmp/krb5cc_cdc323009961_qDJZBq
 HISTFILESIZE=10000
 HISTCONTROL=ignoredups
-DA_SESSION_ID_AUTH=a1ff3677-cafc-d54c-a2d4-0f945465c09b
+DA_SESSION_ID_AUTH=ff9618dd-bec0-be46-9d86-ceac9516c30e
 CDC_PREW2KHOST=apollo3
 CDC_LOCALHOST=apollo3.engr.tamu.edu
 CDC_JOINED_ZONE=CN=Servers,CN=Override,CN=ECEN,CN=Depts,CN=Global,CN=Zones,OU=Centrify,OU=Services,DC=engr,DC=tamu,DC=edu
 CDC_JOINED_SITE=Default-First-Site-Name
 CDC_JOINED_DOMAIN=engr.tamu.edu
-CDC_JOINED_DC=ops4.engr.tamu.edu
+CDC_JOINED_DC=ops3.engr.tamu.edu
 BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 0
 3
-1508796925 SignExtend.v
-1508872701 SignExtendTest.v
+1509078611 SignExtend.v
+1508875986 SignExtenderTestTA.v
 1464145466 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/vcsdp.tab
 4
 0 
 1464147802 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libvirsim.so
 1464147272 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/liberrorinf.so
 1464147248 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libsnpsmalloc.so
-1508872709 simv.daidir
+1509078836 simv.daidir
