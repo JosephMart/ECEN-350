@@ -1,0 +1,92 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "CompileStatus": "Successful",
+    "Misc": {
+        "cwd": "/home/ugrads/j/josephmart/git/ECEN_350/Lab07/alu",
+        "archive_dir": "archive.0",
+        "csrc": "csrc",
+        "daidir": "simv.daidir",
+        "csrc_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab07/alu/csrc",
+        "daidir_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab07/alu/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "NameTable": {
+        "ALUTest_v": [
+            "ALUTest_v",
+            "Mdhkz",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "stat": {
+        "nMops": 1491,
+        "ru_self_end": {
+            "ru_utime_sec": 0.065207000000000001,
+            "ru_maxrss_kb": 61288,
+            "ru_stime_sec": 0.032117,
+            "ru_minflt": 16076,
+            "ru_nvcsw": 300,
+            "ru_majflt": 0,
+            "ru_nivcsw": 88
+        },
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.046600000000000003,
+            "ru_maxrss_kb": 53916,
+            "ru_stime_sec": 0.027182999999999999,
+            "ru_minflt": 13802,
+            "ru_nvcsw": 206,
+            "ru_majflt": 0,
+            "ru_nivcsw": 78
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 15140,
+            "ru_stime_sec": 0.0025799999999999998,
+            "ru_minflt": 560,
+            "ru_nvcsw": 4,
+            "ru_majflt": 0,
+            "ru_nivcsw": 2
+        },
+        "nQuads": 689,
+        "totalObjSize": 132857,
+        "Frontend(%)": 71.464720045393904,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 15140,
+            "ru_stime_sec": 0.0025799999999999998,
+            "ru_minflt": 560,
+            "ru_nvcsw": 4,
+            "ru_majflt": 0,
+            "ru_nivcsw": 2
+        },
+        "mopSpeed": 80131.133444402643,
+        "quadSpeed": 37029.075079271242,
+        "mop/quad": 2.1640058055152394,
+        "outputSizePerQuad": 192.0,
+        "CodeGen(%)": 28.535279954606096
+    },
+    "CurCompileUdps": {},
+    "CompileStrategy": "fullobj",
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "ALUTest_v",
+        "ALUTest_v"
+    ],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 93704
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.28281.json"
+    ]
+}

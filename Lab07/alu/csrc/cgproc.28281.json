@@ -1,0 +1,39 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "ALUTest_v": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "checksum": 0,
+            "bytes": 7205,
+            "mode": 4
+        },
+        "Mdhkz_d": {
+            "mod": "ALUTest_v",
+            "out": "Mdhkz_d.o",
+            "checksum": 0,
+            "bytes": 31948,
+            "mode": 4,
+            "archive": "archive.0/_28281_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_28281_archive_1.a",
+            "size": 31948,
+            "objects": [
+                [
+                    "Mdhkz_d.o",
+                    31948
+                ]
+            ]
+        }
+    ]
+}

@@ -35,7 +35,7 @@ module ALU(BusW, BusA, BusB, ALUCtrl, Zero);
             `LSL: begin
                 BusW <= #20 BusA << BusB;
             end
-            `RSL: begin
+            `LSR: begin
                 BusW <= #20 BusA >> BusB;
             end
             `PassB: begin
