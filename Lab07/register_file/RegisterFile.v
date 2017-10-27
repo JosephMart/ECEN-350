@@ -10,7 +10,7 @@ module RegisterFile(BusA, BusB, BusW, RA, RB, RW, RegWr, Clk);
         register[31] <= 0;
     
     assign #2 BusA = register[RA];
-    assign #2 BusB = register[RAB;
+    assign #2 BusB = register[RB];
 
     always @(negedge Clk)
         if(RegWr && RW != 31)
