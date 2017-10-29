@@ -1,6 +1,6 @@
 module RegisterFile(BusA, BusB, BusW, RA, RB, RW, RegWr, Clk);
-    output [63:0] BusA, BusB;
-    input [63:0] BusW;
+    output [31:0] BusA, BusB;
+    input [31:0] BusW;
     input [4:0] RA, RB, RW;
     input RegWr, Clk;
 
