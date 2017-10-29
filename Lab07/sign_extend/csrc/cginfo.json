@@ -1,107 +1,111 @@
 {
-    "CompileStatus": "Successful",
     "MlibObjs": {},
-    "stat": {
-        "ru_self_cgstart": {
-            "ru_maxrss_kb": 54580,
-            "ru_utime_sec": 0.048569000000000001,
-            "ru_stime_sec": 0.027595999999999999,
-            "ru_minflt": 13671,
-            "ru_majflt": 0,
-            "ru_nivcsw": 46,
-            "ru_nvcsw": 265
-        },
-        "ru_childs_cgstart": {
-            "ru_maxrss_kb": 0,
-            "ru_utime_sec": 0.0,
-            "ru_stime_sec": 0.0,
-            "ru_minflt": 0,
-            "ru_majflt": 0,
-            "ru_nivcsw": 0,
-            "ru_nvcsw": 0
-        },
-        "nQuads": 293,
-        "nMops": 1074,
-        "totalObjSize": 89476,
-        "ru_self_end": {
-            "ru_maxrss_kb": 59424,
-            "ru_utime_sec": 0.055114999999999997,
-            "ru_stime_sec": 0.033744000000000003,
-            "ru_minflt": 15728,
-            "ru_majflt": 0,
-            "ru_nivcsw": 60,
-            "ru_nvcsw": 349
-        },
-        "CodeGen(%)": 11.87698448698176,
-        "ru_childs_end": {
-            "ru_maxrss_kb": 15804,
-            "ru_utime_sec": 0.0,
-            "ru_stime_sec": 0.0025890000000000002,
-            "ru_minflt": 586,
-            "ru_majflt": 0,
-            "ru_nivcsw": 2,
-            "ru_nvcsw": 5
-        },
-        "outputSizePerQuad": 305.0,
-        "Frontend(%)": 88.123015513018245
-    },
-    "PrevCompiledModules": {
-        "...MASTER...": {
-            "amcQw_d": {
-                "checksum": 0,
-                "mod": "...MASTER...",
-                "bytes": 7205,
-                "mode": 4,
-                "out": "objs/amcQw_d.o"
-            }
-        },
-        "SignExtender_tb": {
-            "bbtrW_d": {
-                "checksum": 0,
-                "mod": "SignExtender_tb",
-                "bytes": 17025,
-                "out": "bbtrW_d.o",
-                "mode": 4,
-                "archive": "archive.49/_prev_archive_1.a"
-            }
-        }
-    },
     "NameTable": {
-        "...MASTER...": [
-            "SIM",
-            "amcQw",
-            "module"
-        ],
         "SignExtender_tb": [
             "SignExtender_tb",
             "bbtrW",
             "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
         ]
     },
-    "CompileStrategy": "fullobj",
-    "LVLData": [
-        "SIM"
-    ],
+    "PrevCompiledModules": {
+        "SignExtender_tb": {
+            "bbtrW_d": {
+                "bytes": 17025,
+                "mod": "SignExtender_tb",
+                "mode": 4,
+                "archive": "archive.50/_27451_archive_1.a",
+                "checksum": 0,
+                "out": "bbtrW_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7205,
+                "mod": "...MASTER...",
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/amcQw_d.o"
+            }
+        }
+    },
     "CurCompileUdps": {},
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_minflt": 13632,
+            "ru_utime_sec": 0.056703000000000003,
+            "ru_nvcsw": 259,
+            "ru_stime_sec": 0.032551999999999998,
+            "ru_maxrss_kb": 54528,
+            "ru_nivcsw": 50,
+            "ru_majflt": 0
+        },
+        "nMops": 1090,
+        "nQuads": 300,
+        "quadSpeed": 12738.853503184713,
+        "ru_childs_cgstart": {
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "totalObjSize": 106749,
+        "ru_childs_end": {
+            "ru_minflt": 592,
+            "ru_utime_sec": 0.00098999999999999999,
+            "ru_nvcsw": 9,
+            "ru_stime_sec": 0.00396,
+            "ru_maxrss_kb": 15596,
+            "ru_nivcsw": 3,
+            "ru_majflt": 0
+        },
+        "ru_self_end": {
+            "ru_minflt": 16010,
+            "ru_utime_sec": 0.080253000000000005,
+            "ru_nvcsw": 363,
+            "ru_stime_sec": 0.041241,
+            "ru_maxrss_kb": 60600,
+            "ru_nivcsw": 67,
+            "ru_majflt": 0
+        },
+        "mopSpeed": 46284.501061571122,
+        "mop/quad": 3.6333333333333333,
+        "outputSizePerQuad": 355.0,
+        "Frontend(%)": 70.655302605510073,
+        "CodeGen(%)": 29.344697394489923
+    },
     "SIMBData": {
         "out": "amcQwB.o",
-        "bytes": 89476
+        "bytes": 89556
     },
     "CurCompileModules": [
         "...MASTER...",
+        "SignExtender_tb",
         "SignExtender_tb"
     ],
     "PEModules": [],
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStatus": "Successful",
     "CompileProcesses": [
-        "cgproc.15817.json"
+        "cgproc.27451.json"
     ],
     "Misc": {
-        "archive_dir": "archive.49",
+        "archive_dir": "archive.50",
         "cwd": "/home/ugrads/j/josephmart/git/ECEN_350/Lab07/sign_extend",
-        "csrc": "csrc",
         "csrc_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab07/sign_extend/csrc",
-        "daidir": "simv.daidir",
+        "csrc": "csrc",
         "default_output_dir": "csrc",
+        "daidir": "simv.daidir",
         "daidir_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab07/sign_extend/simv.daidir"
     }
 }

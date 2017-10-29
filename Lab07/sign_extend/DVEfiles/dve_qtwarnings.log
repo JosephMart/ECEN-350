@@ -1,8 +1,0 @@
-QWarning: X Error: BadAccess (attempt to access private resource denied) 10
-  Major opcode:  2
-  Minor opcode:  0
-  Resource id:  0x143
-QWarning: X Error: BadAccess (attempt to access private resource denied) 10
-  Major opcode:  61
-  Minor opcode:  0
-  Resource id:  0x143

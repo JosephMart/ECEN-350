@@ -1,0 +1,22 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 17 days, on: 14-nov-2017.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Oct 29 17:14 2017
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/ugrads/j/josephmart/git/ECEN_350/Lab07/sign_extend/inter.vpd' was opened successfully.
+2000 - Test Passed.
+4000 - Test Passed.
+6000 - Test Passed.
+8000 - Test Passed.
+10000 - Test Passed.
+12000 - Test Passed.
+$finish called from file "SignExtenderTest.v", line 64.
+$finish at simulation time                12000
+Simulation complete, time is 12000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 12000 ps
+CPU Time:      0.070 seconds;       Data structure size:   0.0Mb
+Sun Oct 29 17:14:27 2017

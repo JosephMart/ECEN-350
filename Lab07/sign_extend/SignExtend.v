@@ -19,6 +19,7 @@
 `define CBZ 8'b10110100
 `define CBNZ 8'b10110101
 
+`timescale 1ns / 1ps
 
 module SignExtender(BusImm, Imm32); 
   output reg [63:0] BusImm; 
