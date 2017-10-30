@@ -1,0 +1,92 @@
+{
+    "MlibObjs": {},
+    "CurCompileUdps": {},
+    "CompileProcesses": [
+        "cgproc.31870.json"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_maxrss_kb": 50752,
+            "ru_utime_sec": 0.047262999999999999,
+            "ru_stime_sec": 0.032558999999999998,
+            "ru_nvcsw": 195,
+            "ru_minflt": 13550,
+            "ru_nivcsw": 44,
+            "ru_majflt": 0
+        },
+        "ru_childs_cgstart": {
+            "ru_maxrss_kb": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "Frontend(%)": 65.566561234115767,
+        "nMops": 1569,
+        "totalObjSize": 125979,
+        "nQuads": 658,
+        "ru_self_end": {
+            "ru_maxrss_kb": 58788,
+            "ru_utime_sec": 0.072083999999999995,
+            "ru_stime_sec": 0.041787999999999999,
+            "ru_nvcsw": 281,
+            "ru_minflt": 15831,
+            "ru_nivcsw": 57,
+            "ru_majflt": 0
+        },
+        "ru_childs_end": {
+            "ru_maxrss_kb": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "mopSpeed": 63212.602231980993,
+        "quadSpeed": 26509.810241327912,
+        "mop/quad": 2.384498480243161,
+        "outputSizePerQuad": 191.0,
+        "CodeGen(%)": 34.43343876588424
+    },
+    "PEModules": [],
+    "PrevCompiledModules": {},
+    "NameTable": {
+        "DataMemoryTest_v": [
+            "DataMemoryTest_v",
+            "vPbM3",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "DataMemoryTest_v",
+        "DataMemoryTest_v"
+    ],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 90826
+    },
+    "Misc": {
+        "cwd": "/home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory",
+        "default_output_dir": "csrc",
+        "csrc": "csrc",
+        "csrc_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory/csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory/simv.daidir",
+        "archive_dir": "archive.0"
+    },
+    "CompileStatus": "Successful"
+}

@@ -1,0 +1,36 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "DataMemoryTest_v": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "CompUnits": {
+        "vPbM3_d": {
+            "out": "vPbM3_d.o",
+            "mod": "DataMemoryTest_v",
+            "bytes": 28809,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.1/_333_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_333_archive_1.a",
+            "objects": [
+                [
+                    "vPbM3_d.o",
+                    28809
+                ]
+            ],
+            "size": 28809
+        }
+    ]
+}
