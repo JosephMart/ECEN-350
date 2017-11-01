@@ -1,0 +1,14 @@
+*.log
+*.sml
+*.tcl
+*.so
+*.json
+*.o
+*.info
+*.a
+*.sdb
+*.cu
+*.vpd
+*.timestamp
+*.gz
+simv
