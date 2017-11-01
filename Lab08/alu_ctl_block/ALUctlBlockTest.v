@@ -68,8 +68,6 @@ module ALUctlBlock_v;
 		// R-type ORR
 		{Opcode, ALUop} = {11'b101_0101_0000, 2'b10};
 		#90;passTest(ALUCtrl, 4'b0001, "R-type ORR Test", passed);
-
-		#90;allPassed(passed, 1);
 	end
 
 endmodule

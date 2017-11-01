@@ -1,0 +1,38 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 15 days, on: 14-nov-2017.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Nov  1 00:45 2017
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/ugrads/j/josephmart/git/ECEN_350/Lab08/alu_ctl_block/inter.vpd' was opened successfully.
+                        LDUR Test passed
+                        STUR Test passed
+                         CBZ Test passed
+                  R-type ADD Test passed
+                  R-type SUB Test passed
+                  R-type AND Test passed
+                  R-type ORR Test passed
+Simulation complete, time is 630000 ps.
+Warning : License for product VCSRuntime_Net(725) will expire within 15 days, on: 14-nov-2017.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Nov  1 00:46 2017
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/ugrads/j/josephmart/git/ECEN_350/Lab08/alu_ctl_block/inter.vpd' was opened successfully.
+                        LDUR Test passed
+                        STUR Test passed
+                         CBZ Test passed
+                  R-type ADD Test passed
+                  R-type SUB Test passed
+                  R-type AND Test passed
+                  R-type ORR Test passed
+Simulation complete, time is 630000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 630000 ps
+CPU Time:      0.070 seconds;       Data structure size:   0.0Mb
+Wed Nov  1 00:47:59 2017

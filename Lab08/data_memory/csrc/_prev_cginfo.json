@@ -1,61 +1,38 @@
 {
     "MlibObjs": {},
-    "CurCompileUdps": {},
-    "CompileProcesses": [
-        "cgproc.31870.json"
-    ],
     "LVLData": [
         "SIM"
     ],
-    "stat": {
-        "ru_self_cgstart": {
-            "ru_maxrss_kb": 50752,
-            "ru_utime_sec": 0.047262999999999999,
-            "ru_stime_sec": 0.032558999999999998,
-            "ru_nvcsw": 195,
-            "ru_minflt": 13550,
-            "ru_nivcsw": 44,
-            "ru_majflt": 0
+    "PrevCompiledModules": {
+        "...MASTER...": {
+            "amcQw_d": {
+                "mod": "...MASTER...",
+                "bytes": 7213,
+                "mode": 4,
+                "out": "objs/amcQw_d.o",
+                "checksum": 0
+            }
         },
-        "ru_childs_cgstart": {
-            "ru_maxrss_kb": 0,
-            "ru_utime_sec": 0.0,
-            "ru_stime_sec": 0.0,
-            "ru_nvcsw": 0,
-            "ru_minflt": 0,
-            "ru_nivcsw": 0,
-            "ru_majflt": 0
-        },
-        "Frontend(%)": 65.566561234115767,
-        "nMops": 1569,
-        "totalObjSize": 125979,
-        "nQuads": 658,
-        "ru_self_end": {
-            "ru_maxrss_kb": 58788,
-            "ru_utime_sec": 0.072083999999999995,
-            "ru_stime_sec": 0.041787999999999999,
-            "ru_nvcsw": 281,
-            "ru_minflt": 15831,
-            "ru_nivcsw": 57,
-            "ru_majflt": 0
-        },
-        "ru_childs_end": {
-            "ru_maxrss_kb": 0,
-            "ru_utime_sec": 0.0,
-            "ru_stime_sec": 0.0,
-            "ru_nvcsw": 0,
-            "ru_minflt": 0,
-            "ru_nivcsw": 0,
-            "ru_majflt": 0
-        },
-        "mopSpeed": 63212.602231980993,
-        "quadSpeed": 26509.810241327912,
-        "mop/quad": 2.384498480243161,
-        "outputSizePerQuad": 191.0,
-        "CodeGen(%)": 34.43343876588424
+        "DataMemoryTest_v": {
+            "vPbM3_d": {
+                "archive": "archive.10/_7063_archive_1.a",
+                "mod": "DataMemoryTest_v",
+                "bytes": 28109,
+                "checksum": 0,
+                "out": "vPbM3_d.o",
+                "mode": 4
+            }
+        }
     },
-    "PEModules": [],
-    "PrevCompiledModules": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "DataMemoryTest_v",
+        "DataMemoryTest_v"
+    ],
+    "CurCompileUdps": {},
+    "CompileProcesses": [
+        "cgproc.7063.json"
+    ],
     "NameTable": {
         "DataMemoryTest_v": [
             "DataMemoryTest_v",
@@ -68,25 +45,67 @@
             "module"
         ]
     },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_nvcsw": 210,
+            "ru_stime_sec": 0.027458,
+            "ru_utime_sec": 0.048327000000000002,
+            "ru_maxrss_kb": 51520,
+            "ru_nivcsw": 47,
+            "ru_minflt": 13722,
+            "ru_majflt": 0
+        },
+        "Frontend(%)": 64.993208440362025,
+        "outputSizePerQuad": 85.0,
+        "ru_childs_cgstart": {
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nivcsw": 0,
+            "ru_minflt": 0,
+            "ru_majflt": 0
+        },
+        "totalObjSize": 119020,
+        "nMops": 3192,
+        "nQuads": 1392,
+        "ru_self_end": {
+            "ru_nvcsw": 301,
+            "ru_stime_sec": 0.036623000000000003,
+            "ru_utime_sec": 0.074357000000000006,
+            "ru_maxrss_kb": 57792,
+            "ru_nivcsw": 60,
+            "ru_minflt": 16226,
+            "ru_majflt": 0
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 5,
+            "ru_stime_sec": 0.0030959999999999998,
+            "ru_utime_sec": 0.00077399999999999995,
+            "ru_maxrss_kb": 13068,
+            "ru_nivcsw": 2,
+            "ru_minflt": 587,
+            "ru_majflt": 0
+        },
+        "mopSpeed": 122627.73722627736,
+        "quadSpeed": 53476.757587399145,
+        "CodeGen(%)": 35.006791559637968,
+        "mop/quad": 2.2931034482758621
+    },
     "CompileStrategy": "fullobj",
-    "CurCompileModules": [
-        "...MASTER...",
-        "...MASTER...",
-        "DataMemoryTest_v",
-        "DataMemoryTest_v"
-    ],
+    "CompileStatus": "Successful",
     "SIMBData": {
         "out": "amcQwB.o",
-        "bytes": 90826
+        "bytes": 90911
     },
+    "PEModules": [],
     "Misc": {
         "cwd": "/home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory",
-        "default_output_dir": "csrc",
+        "archive_dir": "archive.10",
         "csrc": "csrc",
         "csrc_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory/csrc",
         "daidir": "simv.daidir",
         "daidir_abs": "/home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory/simv.daidir",
-        "archive_dir": "archive.0"
-    },
-    "CompileStatus": "Successful"
+        "default_output_dir": "csrc"
+    }
 }

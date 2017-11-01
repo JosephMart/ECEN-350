@@ -1,0 +1,19 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "DataMemoryTest_v": {
+            "Compiled": "Yes",
+            "Compiled Times": 12
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "vPbM3_d": {
+            "icPath": "csrc"
+        }
+    },
+    "CompUnits": {},
+    "ObjArchives": []
+}

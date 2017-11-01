@@ -1,12 +1,13 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Mon Oct 30 15:39:20 2017
+# Saved on Wed Nov 1 00:49:48 2017
 # Designs open: 1
 #   Sim: /home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
 #   Source.1: DataMemoryTest_v
-#   Group count = 0
+#   Group count = 1
+#   Group DataMemoryTest_v signal count = 7
 # End_DVE_Session_Save_Info
 
 # DVE version: L-2016.06_Full64
@@ -65,7 +66,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state maximized -rect {{840 65} {1679 1015}}
+gui_show_window -window ${TopLevel.1} -show_state maximized -rect {{0 0} {1919 1019}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -112,23 +113,23 @@ gui_show_toolbar -toolbar {Testbench}
 # End ToolBar settings
 
 # Docked window settings
-set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 107]
+set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 105]
 catch { set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier] }
-gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 107
+gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 105
 gui_set_window_pref_key -window ${HSPane.1} -key dock_height -value_type integer -value -1
 gui_set_window_pref_key -window ${HSPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 106} {height 539} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
-set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 107]
+gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 105} {height 678} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 105]
 catch { set Data.1 [gui_share_window -id ${DLPane.1} -type Data] }
-gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 107
-gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 585
+gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 105
+gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 677
 gui_set_window_pref_key -window ${DLPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 106} {height 539} {dock_state left} {dock_on_new_line true} {child_data_colvariable 140} {child_data_colvalue 100} {child_data_coltype 40} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
-set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 266]
-gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 1620
-gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 266
+gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 105} {height 678} {dock_state left} {dock_on_new_line true} {child_data_colvariable 140} {child_data_colvalue 100} {child_data_coltype 40} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 246]
+gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 1860
+gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 246
 gui_set_window_pref_key -window ${Console.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 839} {height 265} {dock_state bottom} {dock_on_new_line true}}
+gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1919} {height 245} {dock_state bottom} {dock_on_new_line true}}
 #### Start - Readjusting docked view's offset / size
 set dockAreaList { top left right bottom }
 foreach dockArea $dockAreaList {
@@ -172,11 +173,11 @@ gui_update_statusbar_target_frame ${TopLevel.1}
 # DVE Open design session: 
 
 if { [llength [lindex [gui_get_db -design Sim] 0]] == 0 } {
-gui_set_env SIMSETUP::SIMARGS {{}}
-gui_set_env SIMSETUP::SIMEXE {./simv}
+gui_set_env SIMSETUP::SIMARGS {{-ucligui }}
+gui_set_env SIMSETUP::SIMEXE {/home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory/simv}
 gui_set_env SIMSETUP::ALLOW_POLL {0}
 if { ![gui_is_db_opened -db {/home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory/simv}] } {
-gui_sim_run Ucli -exe simv -args { -ucligui} -dir /home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory -nosource
+gui_sim_run Ucli -exe simv -args {-ucligui } -dir /home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory -nosource
 }
 }
 if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
@@ -198,7 +199,14 @@ gui_set_time_units 1ps
 # Global: Signal Compare
 
 # Global: Signal Groups
+gui_load_child_values {DataMemoryTest_v}
 
+
+set _session_group_1 DataMemoryTest_v
+gui_sg_create "$_session_group_1"
+set DataMemoryTest_v "$_session_group_1"
+
+gui_sg_addsignal -group "$_session_group_1" { DataMemoryTest_v.Clock DataMemoryTest_v.MemoryRead DataMemoryTest_v.passed DataMemoryTest_v.WriteData DataMemoryTest_v.Address DataMemoryTest_v.MemoryWrite DataMemoryTest_v.ReadData }
 
 # Global: Highlighting
 
@@ -208,7 +216,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 1770000
+gui_set_time -C1_only 1480075
 
 
 
@@ -250,13 +258,14 @@ gui_view_scroll -id ${Hier.1} -horizontal -set 0
 gui_src_value_annotate -id ${Source.1} -switch false
 gui_set_env TOGGLE::VALUEANNOTATE 0
 gui_open_source -id ${Source.1}  -replace -active DataMemoryTest_v /home/ugrads/j/josephmart/git/ECEN_350/Lab08/data_memory/DataMemoryTest.v
-gui_view_scroll -id ${Source.1} -vertical -set 465
+gui_view_scroll -id ${Source.1} -vertical -set 375
 gui_src_set_reusable -id ${Source.1}
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
 if {[gui_exist_window -window ${TopLevel.1}]} {
 	gui_set_active_window -window ${TopLevel.1}
 	gui_set_active_window -window ${Source.1}
+	gui_set_active_window -window ${HSPane.1}
 }
 #</Session>
 
