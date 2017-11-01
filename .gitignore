@@ -6,6 +6,8 @@
 *.o
 *.info
 *.a
+*.axf
+*.launch
 *.sdb
 *.cu
 *.vpd
