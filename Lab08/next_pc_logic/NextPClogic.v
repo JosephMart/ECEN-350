@@ -8,12 +8,9 @@ module NextPClogic(NextPC, CurrentPC, SignExtImm64, Branch, ALUZero, Uncondbranc
 	reg [63:0] PC_4;
 
 	always @(*) begin
-		PC_4 = CurrentPC + 64'b100;
-		if(Branch & ALUZero)
+		if((Branch & ALUZero) | Uncondbranch)
 			NextPC <= #2 (SignExtImm64 << 2) + CurrentPC ;
-		else if (Uncondbranch)
-			NextPC <= #2 SignExtImm64;
 		else
-			NextPC <= #2 PC_4;
+			NextPC <= #2 CurrentPC + 4;
 	end
 endmodule
