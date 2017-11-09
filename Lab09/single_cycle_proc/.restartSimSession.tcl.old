@@ -1,15 +1,17 @@
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Mon Nov 6 16:26:46 2017
+# Saved on Wed Nov 8 21:50:08 2017
 # Designs open: 1
 #   Sim: /home/ugrads/j/josephmart/git/ECEN_350/Lab09/single_cycle_proc/simv
 # Toplevel windows open: 2
 # 	TopLevel.1
 # 	TopLevel.2
 #   Source.1: SingleCycleProcTest_v
-#   Wave.1: 7 signals
-#   Group count = 1
+#   Wave.1: 32 signals
+#   Group count = 3
+#   Group registers signal count = 9
 #   Group SingleCycleProcTest_v signal count = 7
+#   Group uut signal count = 32
 # End_DVE_Session_Save_Info
 
 # DVE version: L-2016.06_Full64
@@ -59,7 +61,7 @@ gui_sync_global -id ${TopLevel.2} -option true
 
 # MDI window settings
 set Wave.1 Wave.1
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 557} {child_wave_right 1357} {child_wave_colname 276} {child_wave_colvalue 276} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 557} {child_wave_right 1357} {child_wave_colname 276} {child_wave_colvalue 277} {child_wave_col1 0} {child_wave_col2 1}}
 
 # End MDI window settings
 
@@ -86,14 +88,28 @@ gui_set_time_units 1ps
 # Global: Signal Compare
 
 # Global: Signal Groups
+gui_load_child_values {SingleCycleProcTest_v.uut}
 gui_load_child_values {SingleCycleProcTest_v}
+gui_load_child_values {SingleCycleProcTest_v.uut.registers}
 
 
-set _session_group_1 SingleCycleProcTest_v
-gui_sg_create "$_session_group_1"
-set SingleCycleProcTest_v "$_session_group_1"
+set _session_group_6 registers
+gui_sg_create "$_session_group_6"
+set registers "$_session_group_6"
 
-gui_sg_addsignal -group "$_session_group_1" { SingleCycleProcTest_v.currentPC SingleCycleProcTest_v.passed SingleCycleProcTest_v.watchdog SingleCycleProcTest_v.Reset_L SingleCycleProcTest_v.startPC SingleCycleProcTest_v.CLK SingleCycleProcTest_v.dMemOut }
+gui_sg_addsignal -group "$_session_group_6" { SingleCycleProcTest_v.uut.registers.RegWr SingleCycleProcTest_v.uut.registers.RA SingleCycleProcTest_v.uut.registers.RB SingleCycleProcTest_v.uut.registers.BusA SingleCycleProcTest_v.uut.registers.BusB SingleCycleProcTest_v.uut.registers.RW SingleCycleProcTest_v.uut.registers.BusW SingleCycleProcTest_v.uut.registers.Clk SingleCycleProcTest_v.uut.registers.register }
+
+set _session_group_7 SingleCycleProcTest_v
+gui_sg_create "$_session_group_7"
+set SingleCycleProcTest_v "$_session_group_7"
+
+gui_sg_addsignal -group "$_session_group_7" { SingleCycleProcTest_v.currentPC SingleCycleProcTest_v.passed SingleCycleProcTest_v.watchdog SingleCycleProcTest_v.Reset_L SingleCycleProcTest_v.startPC SingleCycleProcTest_v.CLK SingleCycleProcTest_v.dMemOut }
+
+set _session_group_8 uut
+gui_sg_create "$_session_group_8"
+set uut "$_session_group_8"
+
+gui_sg_addsignal -group "$_session_group_8" { SingleCycleProcTest_v.uut.Uncondbranch SingleCycleProcTest_v.uut.ALUResult SingleCycleProcTest_v.uut.Reg2Loc SingleCycleProcTest_v.uut.rA SingleCycleProcTest_v.uut.rb SingleCycleProcTest_v.uut.ALUOp SingleCycleProcTest_v.uut.rB SingleCycleProcTest_v.uut.MemRead SingleCycleProcTest_v.uut.busA SingleCycleProcTest_v.uut.ALUCtrl SingleCycleProcTest_v.uut.busB SingleCycleProcTest_v.uut.rd SingleCycleProcTest_v.uut.currentPC SingleCycleProcTest_v.uut.Branch SingleCycleProcTest_v.uut.ALUSrc SingleCycleProcTest_v.uut.rm SingleCycleProcTest_v.uut.rn SingleCycleProcTest_v.uut.ALUZero SingleCycleProcTest_v.uut.MemWrite SingleCycleProcTest_v.uut.Reset_L SingleCycleProcTest_v.uut.startPC SingleCycleProcTest_v.uut.currentInstruction SingleCycleProcTest_v.uut.busW SingleCycleProcTest_v.uut.dMemOut SingleCycleProcTest_v.uut.CLK SingleCycleProcTest_v.uut.RegWrite SingleCycleProcTest_v.uut.shamt SingleCycleProcTest_v.uut.nextPC SingleCycleProcTest_v.uut.ALUImmRegChoice SingleCycleProcTest_v.uut.opcode SingleCycleProcTest_v.uut.signExtImm64 SingleCycleProcTest_v.uut.MemToReg }
 
 # Global: Highlighting
 
@@ -122,14 +138,15 @@ gui_show_window -window ${Hier.1}
 gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
 gui_list_set_filter -id ${Hier.1} -text {*}
 gui_change_design -id ${Hier.1} -design Sim
-catch {gui_list_select -id ${Hier.1} {SingleCycleProcTest_v}}
+catch {gui_list_expand -id ${Hier.1} SingleCycleProcTest_v}
+catch {gui_list_select -id ${Hier.1} {SingleCycleProcTest_v.uut}}
 gui_view_scroll -id ${Hier.1} -vertical -set 0
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
 
 # Data 'Data.1'
 gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Data.1} -text {*}
-gui_list_show_data -id ${Data.1} {SingleCycleProcTest_v}
+gui_list_show_data -id ${Data.1} {SingleCycleProcTest_v.uut}
 gui_view_scroll -id ${Data.1} -vertical -set 0
 gui_view_scroll -id ${Data.1} -horizontal -set 0
 gui_view_scroll -id ${Hier.1} -vertical -set 0
@@ -150,8 +167,8 @@ set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
-gui_wv_zoom_timerange -id ${Wave.1} 0 445
-gui_list_add_group -id ${Wave.1} -after {New Group} {SingleCycleProcTest_v}
+gui_wv_zoom_timerange -id ${Wave.1} 7864199777 7864200223
+gui_list_add_group -id ${Wave.1} -after {New Group} {uut}
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -167,7 +184,7 @@ if { $groupExD } {
 }
 gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Wave.1} -text {*}
-gui_list_set_insertion_bar  -id ${Wave.1} -group SingleCycleProcTest_v  -position in
+gui_list_set_insertion_bar  -id ${Wave.1} -group uut  -position in
 
 gui_view_scroll -id ${Wave.1} -vertical -set 0
 gui_show_grid -id ${Wave.1} -enable false

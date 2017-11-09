@@ -1,10 +1,10 @@
 module RegisterFile(BusA, BusB, BusW, RA, RB, RW, RegWr, Clk);
-    output [31:0] BusA, BusB;
-    input [31:0] BusW;
+    output [63:0] BusA, BusB;
+    input [63:0] BusW;
     input [4:0] RA, RB, RW;
     input RegWr, Clk;
 
-    reg [31:0] register [63:0];
+    reg [63:0] register [31:0];
 
     always @(posedge Clk)
         register[31] <= 0;
@@ -14,5 +14,5 @@ module RegisterFile(BusA, BusB, BusW, RA, RB, RW, RegWr, Clk);
 
     always @(negedge Clk)
         if(RegWr && RW != 31)
-        register[RW] <= #3 BusW;
+            register[RW] <= #3 BusW;
 endmodule

@@ -100,8 +100,8 @@ module SingleCycleProc(CLK, Reset_L, startPC, currentPC, dMemOut);
    
    //Register file
    /* Create the Reg2Loc Mux with a ternary statement. */
-   // assign #2 rb = Reg2Loc ? rd : rm;
-   assign #2 rb = Reg2Loc ? currentInstruction[4:0] : currentInstruction[20:16];
+   assign #2 rB = Reg2Loc ? rd : rm;
+   // assign #2 rb = Reg2Loc ? currentInstruction[4:0] : currentInstruction[20:16];
 
    RegisterFile registers(.BusA(busA), 
    						  .BusB(busB), 
@@ -115,7 +115,7 @@ module SingleCycleProc(CLK, Reset_L, startPC, currentPC, dMemOut);
    //Sign Extender
    /*instantiate your sign extender*/
    SignExtender signext(.BusImm(signExtImm64), 
-                        .Imm32(currentInstruction[31:0]));
+                        .Imm32(currentInstruction));
    
    //ALU
    ALUControl ALUCont(.ALUCtrl(ALUCtrl), 
