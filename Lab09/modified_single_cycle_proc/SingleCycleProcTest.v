@@ -32,7 +32,7 @@ module SingleCycleProcTest_v;
    task passTest;
       input [63:0] actualOut, expectedOut;
       input [`STRLEN*8:0] testType;
-      inout [7:0] 	  passed;
+      inout [7:0]      passed;
       
       if(actualOut == expectedOut) begin $display ("%s passed", testType); passed = passed + 1; end
       else $display ("%s failed: 0x%x should be 0x%x", testType, actualOut, expectedOut);
@@ -47,27 +47,27 @@ module SingleCycleProcTest_v;
    endtask
    
    // Inputs
-   reg 		  CLK;
-   reg 		  Reset_L;
-   reg [63:0] 	  startPC;
-   reg [7:0] 	  passed;
-   reg [15:0] 	  watchdog;
- 	  
+   reg        CLK;
+   reg        Reset_L;
+   reg [63:0]    startPC;
+   reg [7:0]     passed;
+   reg [15:0]    watchdog;
+     
 
    
    // Outputs
-   wire [63:0] 	  dMemOut;
-   wire [63:0] 	  currentPC;
- 	  
+   wire [63:0]      dMemOut;
+   wire [63:0]      currentPC;
+     
    
    // Instantiate the Unit Under Test (UUT)
    SingleCycleProc uut (
-			.CLK(CLK), 
-			.Reset_L(Reset_L), 
-			.startPC(startPC),
-			.currentPC(currentPC),
-			.dMemOut(dMemOut)
-			);
+         .CLK(CLK), 
+         .Reset_L(Reset_L), 
+         .startPC(startPC),
+         .currentPC(currentPC),
+         .dMemOut(dMemOut)
+         );
    
    initial begin
       // Initialize Inputs
@@ -84,7 +84,7 @@ module SingleCycleProcTest_v;
       
       // Program 1
       #1
-	Reset_L = 0; startPC = 0;
+   Reset_L = 0; startPC = 0;
       #(1 * `ClockPeriod);
       Reset_L = 1;
 
@@ -97,27 +97,35 @@ module SingleCycleProcTest_v;
       // ***********************************************************
 
       while (currentPC < 64'h30)
-	begin
-	   #(1 * `ClockPeriod);
-	   $display("CurrentPC:%h",currentPC);
-	   
-	end
-      #(1 * `ClockPeriod);	// One more cycle to load the pass
-				// code from the DataMemory.
+   
+   begin
+      #(1 * `ClockPeriod);
+      $display("CurrentPC:%h",currentPC);
+      
+   end
+      #(1 * `ClockPeriod); // One more cycle to load the pass
+            // code from the DataMemory.
       passTest(dMemOut, 64'hF, "Results of Program 1", passed);
 
       // ***********************************************************
       // Add your new tests here
       // ***********************************************************
 
-
       // ...
-
+    while (currentPC < 64'h60)
+   
+   begin
+      #(1 * `ClockPeriod);
+      $display("CurrentPC:%h",currentPC);
       
+   end
+      #(1 * `ClockPeriod); // One more cycle to load the pass
+            // code from the DataMemory.
+      passTest(dMemOut, 64'h123456789abcdef0, "Results of Program 2", passed);
       // Done
-      allPassed(passed, 1); 	// Be sure to change the one to match
-				// the number of tests you add.
-      $finish;
+      allPassed(passed, 2);   // Be sure to change the one to match
+            // the number of tests you add.
+      $stop;
    end
    
    initial begin
@@ -134,11 +142,8 @@ module SingleCycleProcTest_v;
 
    // Kill the simulation if the watchdog hits 64K cycles
    always @*
-     if (watchdog == 16'hFFFF)
-     begin
-     	$display("Watchdog Timer Expired.");
-       $finish;
-     end
+     if (watchdog == 16'h1FF)
+       $stop;
    
    
 endmodule

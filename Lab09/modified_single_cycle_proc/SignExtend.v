@@ -48,10 +48,10 @@ module SignExtender(BusImm, Imm32);
 			BusImm = {{55{Imm32[20]}}, Imm32[20:12]};
 		else if(Imm32[31:24] == `BCOND || Imm32[31:24] == `CBZ || Imm32[31:24] == `CBNZ) // Check CB
 			BusImm = {{45{Imm32[23]}}, Imm32[23:5]};
-		else if(Imm32[31:21] == `LSL) // Check R
-			BusImm = {{1'b0}, Imm32[15:10]};
-		else if(Imm32[31:21] == `ORRI) // Check I
-			BusImm = {{1'b0}, Imm32[21:10]};
+		else if(Imm32[31:21] == `LSL)
+			BusImm = {{58{Imm32[15]}}, Imm32[15:10]};
+		else if(Imm32[31:22] == `ORRI)
+			BusImm = {{52{1'b0}}, Imm32[21:10]};
 		else
 			BusImm = 64'b0;
 	end

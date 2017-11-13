@@ -59,6 +59,33 @@ module InstructionMemory(Data, Address);
 	63'h02c: Data = 32'hF80203ED;
 	63'h030: Data = 32'hF84203ED;  //One last load to place stored value on memdbus for test checking.
 
+	/* 34: ADD X9, XZR, XZR
+	*  34: ORRI X9, XZR, 0x123
+	*  38: LSL X9, X9, 0xC
+	*  3C: ORRI X9, X9, 0x456
+	*  40: LSL X9, X9, 0xC
+	*  44: ORRI X9, X9, 0x789
+	*  48: LSL X9, X9, 0xC
+	*  4C: ORRI X9, X9, 0xabc
+	*  50: LSL X9, X9, 0xC
+	*  54: ORRI X9, X9, 0xdef
+	*  58: LSL, X9, X9, 0x4
+	*  5C: STUR X9, [XZR, 0x28]
+	*  60: LDUR X10, [XZR, 0x28]*/
+	
+	63'h034: Data = 32'hB2048FE9;
+	63'h038: Data = 32'hD3603129;
+	63'h03C: Data = 32'hB2115929;
+	63'h040: Data = 32'hD3603129;
+	63'h044: Data = 32'hB21E2529;
+	63'h048: Data = 32'hD3603129;
+	63'h04C: Data = 32'hB22AF129;
+	63'h050: Data = 32'hD3603129;
+	63'h054: Data = 32'hB237BD29;
+	63'h058: Data = 32'hD3601129;
+	63'h05C: Data = 32'hF80283E9;
+	63'h060: Data = 32'hF84283EA;
+
 	/* Add code for your tests here */
 
 			

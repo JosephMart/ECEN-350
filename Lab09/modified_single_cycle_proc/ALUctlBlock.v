@@ -5,8 +5,7 @@
 `define AND  11'b100_0101_0000
 `define ORR  11'b101_0101_0000
 `define ORRI 11'b101_1001_000?
-
-`define LSL 4'b0011
+`define LSL  11'b110_1001_1011
 
 module ALUControl(ALUCtrl, ALUOp, Opcode);
 	input [1:0] ALUOp;

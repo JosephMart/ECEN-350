@@ -69,7 +69,7 @@ module SingleCycleControl(Reg2Loc, ALUSrc, MemToReg, RegWrite, MemRead, MemWrite
             RegWrite <= #2 1'b0;
             ALUOp <= #2 2'b00;
         end
-        `ADDOPCODE, `SUBOPCODE, `ANDOPCODE, `ORROPCODE, `LSLOPCODE: begin
+        `ADDOPCODE, `SUBOPCODE, `ANDOPCODE, `ORROPCODE: begin
             Reg2Loc <= #2 1'b0;
             Uncondbranch <= #2 1'b0;
             Branch <= #2 1'b0;
@@ -102,7 +102,7 @@ module SingleCycleControl(Reg2Loc, ALUSrc, MemToReg, RegWrite, MemRead, MemWrite
             RegWrite <= #2 1'b0;
             ALUOp <= #2 2'bxx;
         end
-        `ORRIOPCODE: begin
+        `ORRIOPCODE, `LSLOPCODE: begin
             Reg2Loc <= #2 1'b0;
             Uncondbranch <= #2 1'b0;
             Branch <= #2 1'b0;
