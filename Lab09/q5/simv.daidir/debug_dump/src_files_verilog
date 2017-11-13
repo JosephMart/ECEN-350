@@ -1,0 +1,10 @@
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/ALU.v
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/ALUctlBlock.v
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/DataMemory.v
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/InstructionMemory.v
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/NextPClogic.v
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/RegisterFile.v
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/SignExtend.v
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/SingleCycleControl.v
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/SingleCycleProc.v
+/home/ugrads/j/josephmart/git/ECEN_350/Lab09/modified_single_cycle_proc/SingleCycleProcTest.v
