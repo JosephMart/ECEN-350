@@ -14,3 +14,8 @@
 *.timestamp
 *.gz
 simv
+csrc/
+
+simv\.daidir/
+
+*.key
